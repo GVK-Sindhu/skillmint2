@@ -2,7 +2,7 @@
 
 SkillMint is a high-fidelity frontend platform designed to showcase a student's professional technical journey. It features role-based access control, a professional "Startup" light theme, and advanced integrations like a live Codolio portfolio.
 
-## 🚀 Features
+##  Features
 - **Role-Based Access Control (RBAC)**: Distinct dashboards for Students, Faculty, and Admin.
 - **Advanced Insight Hub**: Comprehensive student profile featuring:
   - **Live Codolio Portfolio**: Interactive iframe embedding real-time coding metrics.
@@ -11,7 +11,7 @@ SkillMint is a high-fidelity frontend platform designed to showcase a student's 
 - **Faculty Dashboard**: Mentorship tools, talent discovery, and recruitment tracking.
 - **Premium UI**: Modern light theme with vibrant Indigo, Teal, Orange, and Green accents.
 
-## 🔑 Demo Access
+##  Demo Access
 | Role | Email | Password |
 |------|-------|----------|
 | **Super Admin** | `admin@skillmint.com` | `admin123` |
@@ -23,7 +23,7 @@ SkillMint is a high-fidelity frontend platform designed to showcase a student's 
 
 ---
 
-## 🛠️ Project Setup
+##  Project Setup
 
 ### 1. Local Setup (Without Docker)
 
@@ -80,12 +80,8 @@ Run the project in a containerized environment using Docker:
 
 ---
 
-## 💻 Tech Stack
+##  Tech Stack
 - **Frontend**: React.js, Vite
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
 - **Authentication**: Frontend-only `localStorage` simulation
-- **Deployment**: Optimized for Vercel/Netlify
-
-## 📄 License
-Designed and developed by **Sindhu GVK**.
