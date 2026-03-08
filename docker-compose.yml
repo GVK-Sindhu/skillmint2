@@ -1,0 +1,7 @@
+services:
+  skillmint:
+    build: .
+    container_name: skillmint-webapp
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap');
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  --background: #f8fafc;
+  --foreground: #0f172a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-bold rounded-xl transition-all shadow-lg active:scale-95 disabled:opacity-50 disabled:pointer-events-none hover:shadow-primary-600/30;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-secondary-500 hover:bg-secondary-600 text-white font-bold rounded-xl transition-all shadow-lg active:scale-95;
+  }
+
+  .btn-accent {
+    @apply px-6 py-3 bg-accent-500 hover:bg-accent-600 text-white font-bold rounded-xl transition-all shadow-lg active:scale-95;
+  }
+
+  .btn-success {
+    @apply px-6 py-3 bg-success-500 hover:bg-success-600 text-white font-bold rounded-xl transition-all shadow-lg active:scale-95;
+  }
+
+  .card {
+    @apply bg-white border border-gray-100 rounded-3xl p-6 shadow-sm hover:shadow-xl hover:shadow-primary-600/5 transition-all duration-300;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-gray-50 border border-gray-100 rounded-2xl text-text-primary focus:outline-none focus:ring-2 focus:ring-primary-600/10 focus:border-primary-600 transition-all placeholder:text-text-secondary/50;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 via-primary-700 to-secondary-500;
+  }
+
+  .text-gradient-orange {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-500 to-accent-700;
+  }
+
+  /* Success gradient for more color variety */
+  .text-gradient-green {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-success-500 to-success-700;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+  border: 3px solid #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+::selection {
+  background-color: #c7d2fe;
+  color: #312e81;
+}
+
+.font-heading {
+  font-family: 'Outfit', sans-serif;
+}
