@@ -1,16 +1,91 @@
-# React + Vite
+# SkillMint - Advanced Student Professional Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SkillMint is a high-fidelity frontend platform designed to showcase a student's professional technical journey. It features role-based access control, a professional "Startup" light theme, and advanced integrations like a live Codolio portfolio.
 
-Currently, two official plugins are available:
+## 🚀 Features
+- **Role-Based Access Control (RBAC)**: Distinct dashboards for Students, Faculty, and Admin.
+- **Advanced Insight Hub**: Comprehensive student profile featuring:
+  - **Live Codolio Portfolio**: Interactive iframe embedding real-time coding metrics.
+  - **Skills Cloud**: Dynamic tag-based visualization of technical proficiency.
+  - **Experience & Certifications**: Professional timeline and credential grid.
+- **Faculty Dashboard**: Mentorship tools, talent discovery, and recruitment tracking.
+- **Premium UI**: Modern light theme with vibrant Indigo, Teal, Orange, and Green accents.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔑 Demo Access
+| Role | Email | Password |
+|------|-------|----------|
+| **Super Admin** | `admin@skillmint.com` | `admin123` |
+| **Faculty** | `faculty@college.edu` | *any* |
+| **Student** | `jane@example.com` | *any* |
 
-## React Compiler
+> [!NOTE]
+> Emails containing "faculty" are automatically assigned the faculty role during signup.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Project Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Local Setup (Without Docker)
+
+Follow these steps to run the project directly on your machine:
+
+**Prerequisites:**
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [npm](https://www.npmjs.com/)
+
+**Steps:**
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/GVK-Sindhu/skillmint2.git
+   cd skillmint2
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+4. **Access the app:**
+   Open `http://localhost:5173` (or the port shown in your terminal).
+
+---
+
+### 2. Docker Setup (Recommended)
+
+Run the project in a containerized environment using Docker:
+
+**Prerequisites:**
+- [Docker](https://www.docker.com/products/docker-desktop/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+**Steps:**
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/GVK-Sindhu/skillmint2.git
+   cd skillmint2
+   ```
+2. **Build and run the container:**
+   ```bash
+   docker-compose up --build -d
+   ```
+3. **Access the app:**
+   Open `http://localhost:8080`.
+
+**Useful Docker Commands:**
+- **Stop the containers:** `docker-compose down`
+- **View logs:** `docker-compose logs -f`
+- **Rebuild after changes:** `docker-compose up --build`
+
+---
+
+## 💻 Tech Stack
+- **Frontend**: React.js, Vite
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Authentication**: Frontend-only `localStorage` simulation
+- **Deployment**: Optimized for Vercel/Netlify
+
+## 📄 License
+Designed and developed by **Sindhu GVK**.
